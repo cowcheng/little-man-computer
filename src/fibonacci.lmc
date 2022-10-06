@@ -1,0 +1,28 @@
+; Author    : Cow Cheng
+; Date      : 06-10-2022
+; Purpose   : Calculate the Nth Fibonacci number.
+
+        INP
+        BRZ ZERO
+LOOP    SUB COUNTER
+        BRZ OUTPUT
+        STA INPUT
+        LDA STARTER
+        STA TEMP
+        LDA RESULT
+        STA STARTER
+        ADD TEMP
+        STA RESULT
+        LDA INPUT
+        BRP LOOP
+ZERO    OUT
+        HLT
+OUTPUT  LDA RESULT
+        OUT
+        HLT
+
+COUNTER DAT 1
+INPUT   DAT 0
+STARTER DAT 0
+RESULT  DAT 1
+TEMP    DAT 0
