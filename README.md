@@ -10,7 +10,7 @@ is generally used to teach students because it models a simple von Neumann archi
 basic features of a modern computer. It can be programmed in machine code (albeit in decimal rather than binary) or
 assembly code.
 
-> Please visit the [Wiki of Little Man Computer](https://en.wikipedia.org/wiki/Little_man_computer) for more
+> Please visit the [Wikipedia of Little Man Computer](https://en.wikipedia.org/wiki/Little_man_computer) for more
 > information.
 
 ## How to run the LMC program
