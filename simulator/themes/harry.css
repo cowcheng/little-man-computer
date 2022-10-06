@@ -1,0 +1,41 @@
+/*
+
+    Name:       Base16 Default Dark
+    Author:     Chris Kempson (http://chriskempson.com)
+
+    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-codemirror)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+.cm-s-harry.CodeMirror { background: #151515; color: #e0e0e0; }
+.cm-s-harry div.CodeMirror-selected { background: #303030; }
+.cm-s-harry .CodeMirror-line::selection, .cm-s-harry .CodeMirror-line > span::selection, .cm-s-harry .CodeMirror-line > span > span::selection { background: rgba(48, 48, 48, .99); }
+.cm-s-harry .CodeMirror-line::-moz-selection, .cm-s-harry .CodeMirror-line > span::-moz-selection, .cm-s-harry .CodeMirror-line > span > span::-moz-selection { background: rgba(48, 48, 48, .99); }
+.cm-s-harry .CodeMirror-gutters { background: #151515; border-right: 0px; }
+.cm-s-harry .CodeMirror-guttermarker { color: #ac4142; }
+.cm-s-harry .CodeMirror-guttermarker-subtle { color: #505050; }
+.cm-s-harry .CodeMirror-linenumber { color: #505050; }
+.cm-s-harry .CodeMirror-cursor { border-left: 1px solid #b0b0b0; }
+
+.cm-s-harry span.cm-comment { color: #848484; }
+.cm-s-harry span.cm-atom { color: #aa759f; }
+.cm-s-harry span.cm-number { color: #aa759f; }
+
+.cm-s-harry span.cm-property, .cm-s-harry span.cm-attribute { color: #90a959; }
+.cm-s-harry span.cm-keyword { color: #ea1719; }
+.cm-s-harry span.cm-builtin { color: #42b0f4; }
+.cm-s-harry span.cm-string { color: #f4bf75; }
+
+.cm-s-harry span.cm-variable { color: #90a959; }
+.cm-s-harry span.cm-variable-2 { color: #6a9fb5; }
+.cm-s-harry span.cm-def { color: #d28445; }
+.cm-s-harry span.cm-bracket { color: #e0e0e0; }
+.cm-s-harry span.cm-tag { color: #ac4142; }
+.cm-s-harry span.cm-link { color: #aa759f; }
+.cm-s-harry span.cm-error { background: #ac4142; color: #b0b0b0; }
+
+.cm-s-harry .CodeMirror-activeline-background { background: #202020; }
+.cm-s-harry .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }
+
+.cm-s-harry-error { background: #680000;}

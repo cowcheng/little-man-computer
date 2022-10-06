@@ -1,0 +1,72 @@
+<head>
+  <script src="codemirror.js"></script>
+  <link rel="stylesheet" href="style/codemirror.css">
+  <link rel="stylesheet" href="themes/harry.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script src="mode/lmc/lmc.js"></script>
+
+  <script src="LMC.js"></script>
+</head>
+
+<body>
+<div align="center">
+<div class="codeContainer">
+<div class="containerObject" align="left">
+  <select>
+    testParam
+    testParam2
+  </select>
+</div>
+<div class="containerObject" align="left">
+<textarea id="code">
+; Purpose   : output the xth Fibonacci number which x is an integer entered by the user
+; Author    : Cow
+; Date      : 26-11-2020
+
+        INP
+        BRZ ZERO
+LOOP    SUB COUNTER
+        BRZ OUTPUT
+        STA INPUT
+        LDA STARTER
+        STA TEMP
+        LDA RESULT
+        STA STARTER
+        ADD TEMP
+        STA RESULT
+        LDA INPUT
+        BRP LOOP
+ZERO    OUT
+        HLT
+OUTPUT  LDA RESULT
+        OUT
+        HLT
+
+COUNTER DAT 1
+INPUT   DAT 0
+STARTER DAT 0
+RESULT  DAT 1
+TEMP    DAT 0
+</textarea></div><div class="containerObject" align="left"><textarea id="compiled" align="left"></textarea></div><div class="test"><div id="memoryView"></div></div>
+</div>
+</div>
+
+
+
+
+
+
+
+<br>
+<div>
+  <a class="btn" onclick="code_compile()"><span class="ignore-hit"><img src="icon/compile.svg" width="16px" class="ignore-hit"/> Compile & mount</span></a>
+  <a class="btn" onclick="code_run()"><span class="ignore-hit"><img src="icon/play3.svg" width="16px"/> Run!</span></a>
+  <a class="btn" onclick="stopRunning()"><span class="ignore-hit">Stop</a>
+</div>
+<br>
+
+<textarea id="output">
+output will show here :)
+</textarea>
+
+</body>

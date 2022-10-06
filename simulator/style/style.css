@@ -1,0 +1,159 @@
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #636363;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3081b3;
+  text-decoration: none;
+}
+
+.btn:active{
+  background: #484848;
+}
+
+.ignore-hit {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.codeArea {
+  background: #555;
+  padding: 1px 1px 1px 1px;
+}
+
+.CodeMirror {
+  border: 1px solid #333;
+}
+
+table{
+  background: #222;
+  color: #CCC;
+}
+
+/* Cell state has not been written / read from yet */
+.memoryCellInactive{
+  background: #111;
+  color: #999;
+}
+
+/* Cell has been read / written this execution */
+.memoryCellActive{
+  background: #333;
+  color: #CCC;
+}
+
+/* Shows cell being written to */
+.memoryCellWrite{
+  background: #006793;
+  color: #EEE;
+}
+
+.memoryCellFetch{
+  background: #CCCC00;
+  color: #EEE;
+}
+
+/* Shows cell being read */
+.memoryCellRead{
+  background: #484;
+  color: #EEE;
+}
+
+.memoryCellRead, .memoryCellFetch, .memoryCellWrite, .memoryCellActive, .memoryCellInactive{
+  text-align: right;
+  min-width: 48px;
+  height: 48px;
+  padding: 5px 5px 5px 0px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.programCounter{
+  display: inline-block;
+  height: 20px;
+  width: 40px;
+  background: #444;
+  color: #02cafc;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.memoryHeader{
+  /*height: 40px;*/
+  background: #222;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+
+.pcH1{
+  display: inline-block;
+  color: #FFF;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.spacer{
+  display: inline-block;
+  width: 5px;
+}
+
+.bigSpacer{
+  display: inline-block;
+  width: 20px;
+}
+
+.container{
+  width: 640px; /*can be in percentage also.*/
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  background: #F00;
+}
+
+.codeContainer{
+  background: #444;
+  padding: 10px;
+}
+
+.test{
+  display: inline-block;
+  vertical-align:middle;
+
+  background: #0F0;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.containerObject{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+body {
+  background: #333;
+}
