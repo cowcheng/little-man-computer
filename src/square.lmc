@@ -1,0 +1,23 @@
+; Author    : Cow Cheng
+; Date      : 06-10-2022
+; Purpose   : Calculate the square of the integer.
+
+        INP
+        STA INPUT
+        STA TEMP
+LOOP    LDA RESULT
+        ADD INPUT
+        STA RESULT
+        LDA TEMP
+        SUB COUNTER
+        BRZ RETURN
+        STA TEMP
+        BRP LOOP
+RETURN  LDA RESULT
+        OUT
+        HLT
+
+COUNTER DAT 1
+TEMP    DAT 0
+INPUT   DAT 0
+RESULT  DAT 0
