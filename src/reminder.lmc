@@ -1,0 +1,19 @@
+; Author    : Cow Cheng
+; Date      : 06-10-2022
+; Purpose   : Calculate the remainder between two integers.
+
+        INP
+        STA INPUT1
+        INP
+        STA INPUT2
+        LDA INPUT1
+LOOP    STA RESULT
+        SUB INPUT2
+        BRP LOOP
+        LDA RESULT
+        OUT
+        HLT
+
+INPUT1  DAT 0
+INPUT2  DAT 0
+RESULT  DAT 0
